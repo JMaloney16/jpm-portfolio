@@ -19,9 +19,12 @@
                 <p>{tab.name}</p>
             </a>
         {/each} -->
-        <a href="mailto: jackpmaloney1@gmail.com" rel="external">
-            <i class="fa-regular fa-envelope"/>
-        </a>
+        <div class="group rounded-full hover:bg-white duration-200 hover:text-black hover:px-10">
+            <a href="mailto: jackpmaloney1@gmail.com" rel="external" class="flex gap-2 items-center">
+                <p class="poppins text-transparent group-hover:text-black">jack@jackmaloney.co.uk</p>
+                <i class="fa-solid fa-envelope"/>
+            </a>
+        </div>
         {#each sociallinks as social}
             <a rel="external" target="_blank" href={social.link}>
                 <i class={social.icon}/>
