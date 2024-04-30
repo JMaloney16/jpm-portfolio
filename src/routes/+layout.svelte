@@ -7,6 +7,11 @@
     let innerHeight = 0
     let innerWidth = 0
 
+    let sociallinks = [
+        {icon: 'fa-brands fa-linkedin', link: 'https://www.linkedin.com'},
+        {icon: 'fa-brands fa-github', link: 'https://www.github.com/JMaloney16'}
+    ]
+
     function goTop() {
         document.body.scrollIntoView
     }
@@ -18,7 +23,7 @@
             <i class="fa-solid fa-arrow-up grid place-items-center aspect-square" />
         </button>
     </div>
-    <Header y={y}/>
+    <Header y={y} sociallinks={sociallinks}/>
     <slot />
     <Footer/>
   </div>
