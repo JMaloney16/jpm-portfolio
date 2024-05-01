@@ -1,10 +1,10 @@
 <script>
     export let y;
     export let sociallinks;
-
+    
     let tabs = [
-        {name: 'Projects', link: '#projects'},
-        {name: 'About me', link: '#about'}
+    {name: 'Projects', link: '#projects'},
+    {name: 'About me', link: '#about'}
     ]
     
 </script>
@@ -18,17 +18,15 @@
             <a href={tab.link} class="duration-200 hover:text-violet-400">
                 <p>{tab.name}</p>
             </a>
-        {/each} -->
-        <div class="group rounded-full sm:hover:bg-white duration-200 sm:hover:text-black sm:hover:px-10">
-            <a href="mailto: jackpmaloney1@gmail.com" rel="external" class="flex gap-2 items-center">
+            {/each} -->
+            <a href="mailto: jackpmaloney1@gmail.com" rel="external" class="flex gap-2 justify-end items-center group rounded-full sm:hover:bg-white duration-200 sm:hover:text-black sm:hover:px-5">
                 <p class="sm:flex hidden poppins text-transparent group-hover:text-black">jack@jackmaloney.co.uk</p>
                 <i class="fa-solid fa-envelope"/>
             </a>
-        </div>
-        {#each sociallinks as social}
+            {#each sociallinks as social}
             <a rel="external" target="_blank" href={social.link}>
                 <i class={social.icon}/>
             </a>
-        {/each}
-    </div>
-</header>
+            {/each}
+        </div>
+    </header>
