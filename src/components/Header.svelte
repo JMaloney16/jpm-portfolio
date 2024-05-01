@@ -13,15 +13,15 @@
     <h1 class="font-medium">
         <b class="font-bold poppins">Jack</b> Maloney
     </h1>
-    <div class="sm:flex ml-auto pr-4 items-center gap-4 hidden">
+    <div class="flex ml-auto pr-4 items-center gap-4">
         <!-- {#each tabs as tab, index}
             <a href={tab.link} class="duration-200 hover:text-violet-400">
                 <p>{tab.name}</p>
             </a>
         {/each} -->
-        <div class="group rounded-full hover:bg-white duration-200 hover:text-black hover:px-10">
+        <div class="group rounded-full sm:hover:bg-white duration-200 sm:hover:text-black sm:hover:px-10">
             <a href="mailto: jackpmaloney1@gmail.com" rel="external" class="flex gap-2 items-center">
-                <p class="poppins text-transparent group-hover:text-black">jack@jackmaloney.co.uk</p>
+                <p class="sm:flex hidden poppins text-transparent group-hover:text-black">jack@jackmaloney.co.uk</p>
                 <i class="fa-solid fa-envelope"/>
             </a>
         </div>
