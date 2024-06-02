@@ -16,43 +16,32 @@
 </script>
 
 <main class="flex flex-col flex-1 p-4">
-    <section id="introPage" class="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 sm:py-14">
+    <section id="introPage" class="grid h-screen gap-10 py-8 sm:py-14">
         <div class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10">
             <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
-                Hi! I'm <span class="poppins text-violet-400">Jack</span> Maloney <br/>Full Stack
-                <span class="poppins text-violet-400">Developer</span>
+                <span class="poppins text-violet-400">Jack</span> Maloney <br/>
+                Part Time <span class="poppins text-violet-400">Developer</span>
             </h2>
             <p class="text-base sm:text-lg md:text-xl">
-                My <span class="text-violet-400"> favourite tech</span> includes Ansible, TailwindCSS, some other crap.
+                I'm a <span class="text-violet-400"> technical consultant</span>, with experience in full stack development, platform engineering, and esports.
             </p>
-            <a href="#" target="_blank"
+            <!-- <a href="mailto: jack@jackmaloney.co.uk" target="_blank"
             class="blueShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950 z-[-1]">
                 <div class="absolute top-0 right-full w-full h-full bg-violet-400 opacity-20 group-hover:translate-x-full z-0 duration-200"/>
                 <h4 class="relative z-9">Get in touch &rarr;</h4>
-            </a>
+            </a> -->
         </div>
         <!-- <div class="relative shadow-2xl grid place-items-center"> -->
             <!-- <img src={"images/profile.png"} alt="Jack circa 2013" class="object-cover z-[2] max-h-[70vh]"/> -->
         <!-- </div> -->
+
     </section>
     <section id="projects" class="py-20 lg:py-32 flex flex-col gap-24">
-        <div class="flex flex-col gap-2 text-center">
-            <h6 class="text-large sm:text-xl md:text-2xl">
-                A few of my projects.
-            </h6>
-            <h3>
-                Curious to <span class="poppins text-violet-400">see</span> my work?
-            </h3>
-        </div>
-            <a href="" target="_blank" class="mx-auto px-4 py-2 rounded-md border border-solid border-white flex items-center gap-2 -mb-4 sm:-mb-0 -mt-10 hover:border-violet-700 duration-200">
-                <i class="fa-regular fa-circle-play"></i>
-                <p>Watch this</p>
-            </a>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
                 <Step step={steps[0]}>
-                    <p>Broadcasting graphics and tools for Assetto Corsa Competizione
-                    <strong class="text-violet-400">Node.JS, Python</strong>
-                    Node.JS for ACC telemetry, Python for graphics generation.</p>
+                    <p>Broadcasting graphics and tools for Assetto Corsa Competizione, using
+                    <strong class="text-violet-400">Node.JS and Python</strong>
+                    for telemetry and graphics generation.</p>
                 </Step>
                 <Step step={steps[1]}>
                     <p>Creating a workflow to quickly provision and setup cloud machines for use in esports broadcasting, technologies include
@@ -61,7 +50,7 @@
                 </Step>
                 <Step step={steps[2]}>
                     <p>This website is built as a DevOps project, utilizing cloud services, CI/CD pipelines, and more. It makes use of
-                    <strong class="text-violet-400">SvelteKit & TailwindCSS, Azure</strong> and other technologies in the background.
+                    <strong class="text-violet-400">SvelteKit & TailwindCSS, Azure</strong> and more in the background.
                     </p>
                 </Step>
             </div>

@@ -25,7 +25,7 @@
     </div>
     <Header y={y} sociallinks={sociallinks}/>
     <slot />
-    <Footer/>
+    <!-- <Footer/> -->
   </div>
 
   <svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth />
