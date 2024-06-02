@@ -2,10 +2,16 @@
     import "../app.css";
     import Footer from "../components/Footer.svelte";
     import Header from "../components/Header.svelte";
+    export const prerender = true;
 
     let y;
     let innerHeight = 0
     let innerWidth = 0
+
+    let sociallinks = [
+        {icon: 'fa-brands fa-linkedin', link: 'https://www.linkedin.com'},
+        {icon: 'fa-brands fa-github', link: 'https://www.github.com/JMaloney16'}
+    ]
 
     function goTop() {
         document.body.scrollIntoView
@@ -14,13 +20,13 @@
   
   <div class="relative flex flex-col max-w-[1400px] mx-auto w-full text-sm sm:text-base min-h-screen">
     <div class={"fixed bottom-0 w-full durartion-200 flex p-10 z-[10] " + (y > 0 ? ' opacity-full pointer-events-auto': ' pointer-events-none opacity-0')}>
-        <button on:click={goTop} class="ml-auto rounded-full bg-slate-900 text-violet-400 px-3 sm:px-4 hover:bg-slate-800 cursor-pointer">
+        <!-- <button on:click={goTop} class="ml-auto rounded-full bg-slate-900 text-violet-400 px-3 sm:px-4 hover:bg-slate-800 cursor-pointer">
             <i class="fa-solid fa-arrow-up grid place-items-center aspect-square" />
-        </button>
+        </button> -->
     </div>
-    <Header y={y}/>
+    <Header y={y} sociallinks={sociallinks}/>
     <slot />
-    <Footer/>
+    <!-- <Footer/> -->
   </div>
 
   <svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth />
