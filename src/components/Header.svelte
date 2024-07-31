@@ -19,7 +19,7 @@
                 <p>{tab.name}</p>
             </a>
             {/each} -->
-            <a href="mailto: jackpmaloney1@gmail.com" rel="external" class="flex gap-2 justify-end items-center group rounded-full sm:hover:bg-white duration-200 sm:hover:text-black sm:hover:px-5">
+            <a href="mailto: jack@jackmaloney.co.uk" rel="external" class="flex gap-2 justify-end items-center group rounded-full sm:hover:bg-white duration-200 sm:hover:text-black sm:hover:px-5">
                 <p class="sm:flex hidden poppins text-transparent group-hover:text-black">jack@jackmaloney.co.uk</p>
                 <i class="fa-solid fa-envelope"/>
             </a>
