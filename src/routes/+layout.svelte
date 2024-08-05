@@ -9,7 +9,7 @@
     let innerWidth = 0
 
     let sociallinks = [
-        {icon: 'fa-brands fa-linkedin', link: 'https://www.linkedin.com'},
+        {icon: 'fa-brands fa-linkedin', link: 'https://www.linkedin.com/in/jackmaloney10'},
         {icon: 'fa-brands fa-github', link: 'https://www.github.com/JMaloney16'}
     ]
 
