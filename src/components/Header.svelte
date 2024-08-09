@@ -9,7 +9,7 @@
     
 </script>
 
-<header class={'sticky z=[10] top-2 duration-200 px-8 rounded-full flex items-center justify-between border border-solid ' + (y > 0 ? ' py-4 bg-slate-950/70 border-transparent backdrop-blur-md' : 'py-6 bg-transparent border-transparent')}>
+<header class={'sticky z=[10] top-2 duration-200 px-8 rounded-full flex items-center justify-between border border-solid ' + (y > 0 ? ' py-4 bg-steel_blue-300/70 border-transparent backdrop-blur-md' : 'py-6 bg-transparent border-transparent')}>
     <h1 class="font-medium">
         <b class="font-bold poppins">Jack</b> Maloney
     </h1>
