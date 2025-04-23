@@ -33,7 +33,8 @@ jobs:
             npx eslint . \
             --config eslint.config.js \
             --format @microsoft/eslint-formatter-sarif \
-            --output-file eslint-results.sarif
+            --output-file eslint-results.sarif \
+            --debug
             ls
         continue-on-error: true
 
