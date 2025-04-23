@@ -29,14 +29,11 @@ jobs:
       - name: Run ESLint
         env:
           SARIF_ESLINT_IGNORE_SUPRESSED: "true"
-        run: |
-            npx eslint .
-            --config eslint.config.js
-            --format @microsoft/eslint-formatter-sarif
-            --output-file eslint-results.sarif
-            --debug
-            echo "ESLint output: "
-            cat eslint-results.sarif
+        run: npx eslint . \
+          --config eslint.config.js \
+          --format @microsoft/eslint-formatter-sarif \
+          --output-file eslint-results.sarif
+          ls
         continue-on-error: true
 
       - name: Upload analysis results to GitHub
